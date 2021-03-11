@@ -1,0 +1,730 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: 400 16px Roboto, sans-serif;
+	background: black;
+	color: silver;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: 300;
+	line-height: 1.6;
+	color: goldenrod;
+}
+
+input,label{
+    color:#101010;
+    font-size: 1rem; 
+    padding: 0.625rem 0rem;
+    margin-bottom: 0.75rem;
+}
+
+input.invalid{
+    background-color: #ffdddd;
+}
+
+section i{
+	color: goldenrod;
+	font-size: 2.5rem;
+	font-weight: 300;
+  	line-height: 1.6;
+}
+
+footer h4{
+	font-weight: 300;
+	color: goldenrod;
+}
+
+footer p,a{
+	font-size: 0.8rem;
+	font-weight: 300;
+}
+
+footer i{
+	color:goldenrod;
+	font-size: 1.5rem;
+	transition-delay: 0.25s;
+	transition-timing-function: ease-out;
+	transition: transform 0.4s;
+}
+
+footer i:hover{
+	color: goldenrod;
+	transform: scale(0.8);
+}
+
+strong{
+	color: goldenrod;
+}
+
+#carouselEnd blockquote{
+	font-size: 3vw;
+	font-weight: 300;
+}
+
+#carouselEnd blockquote-lead{
+	color: goldenrod;
+	font-size: 0.75rem;
+}
+
+#carouselEnd i{
+  	line-height: 1.6;
+}
+
+#carouselStart h2{
+	font-size: 6vw;
+	font-weight: 300;
+	color: silver;
+}
+
+#carouselStart lead{
+	font-size: calc(0.25rem+0.25vw);
+	font-weight: 300;
+	margin-bottom: 0;
+	color: goldenrod;
+}
+
+#carouselStart p{
+	opacity: 0.66;
+	font-size: 0.75rem;
+	margin-top: 2rem;
+}
+
+#carouselStart .carousel-indicators{
+    z-index: 1030;
+}
+
+#carouselStart img{
+	height: 100vh; /* 100% da altura do viewport  */
+	width: 100%; /* Enche toda a largura do ecrã  */
+	overflow: hidden; /* O excedente fica escondido  */
+}
+
+#contacts label{
+    color:silver;
+}
+
+#contactsModal label{
+    color:silver;
+}
+
+#contatosSquares{
+	text-decoration: none;
+	transition: transform 0.8s;
+}
+
+#contatosSquares:hover{
+	transform: scale(0.75);
+}
+
+#diagnoseForm{
+    background-color: whitesmoke;
+    color:#101010;
+    padding: 2rem;
+    height: 100%;
+}
+
+#diagnoseForm button{
+    color: #212529;
+	background-color:goldenrod;
+    border-color: goldenrod;
+	font-size: 1.25rem;
+	font-weight: 600;
+	transition: opacity 0.4s,color 0.4s;
+    cursor: pointer;
+}
+
+#diagnoseForm button:hover{
+    color: black;
+	transition-delay: 0.25s;
+	transition-timing-function: ease-out;
+	opacity:0.8;
+}
+
+#introVideo{
+	position: relative;
+	background-color: black;
+	height: 100vh; /* 100% da altura do viewport  */
+	min-height: 25rem;
+	width: 100%; /* Enche toda a largura do ecrã  */
+	overflow: hidden; /* O excedente fica escondido  */
+}
+
+#introVideo video{
+	position: absolute; /*Posiciona-se em relação ao elemento pai não static*/
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 0; /*Prioridade nível 0*/
+	-ms-transform: translateX(-50%) translateY(-50%); /* IE 9 compatibilidade */
+	-moz-transform: translateX(-50%) translateY(-50%); /* Mozila compatibilidade */
+	-webkit-transform: translateX(-50%) translateY(-50%); /* Chrome compatibilidade */
+	transform: translateX(-50%) translateY(-50%); /* DÚVIDA PARA PROF */
+}
+
+#introVideo .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.45;
+	z-index: 1; /*Prioridade nível 1*/
+}
+
+#map {
+	height: 50vh;
+	width:50vw;
+}
+
+#navServices a.nav-link{
+	font-size: 1.25rem;
+	font-weight: 600;
+	color:silver;
+	transition: color 0.4s;
+}
+  
+#navServices a.nav-link:focus{
+	color:black;
+}
+
+#navServices a.nav-link:active:enabled{
+	color:goldenrod;
+}
+
+#numbersStats span{
+	font-size: 4vw;
+	font-weight: 300;
+	line-height: 1.2;
+	color: silver;
+}
+
+#numbersStats p{
+	color: goldenrod;
+}
+
+#owl-clients .item{
+	background: #101010;
+	padding: 0px 0px;
+	margin: 0px;
+	color: goldenrod;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-align: center;
+}
+
+#plans .card{
+	min-height: 60vh;
+}
+
+#plans a{
+	color:#101010;
+	font-size: 1rem; 
+}
+
+#plans a:hover{
+	color:#101010;
+	font-size: 1rem;
+	text-decoration: none
+}
+
+#prevBtn {
+    background-color: #bbbbbb;
+}
+  
+#socialMedia i{
+	text-decoration: none;
+	transition: color 0.4s;
+}
+
+#socialMedia i:hover{
+	color: silver;
+	transition-delay: 0.25s;
+	transition-timing-function: ease-in-out;
+}
+
+#team i{
+	color:grey;
+	font-size: 1.5rem;
+	transition: color 0.4s,transform 0.4s;
+}
+
+#team i:hover{
+	color: goldenrod;
+	transition-delay: 0.075s;
+	transition-timing-function: ease-in-out;
+	transform: scale(0.8);
+}
+
+#theFaq a{
+	color: goldenrod;
+	transition: color 0.8s;
+}
+
+#theFaq a:hover{
+	color: silver;
+	text-decoration: none;
+	transition-delay: 0.15s;
+	transition-timing-function: ease-in-out;
+}
+
+.background-modal{
+    background: linear-gradient(106deg, rgba(0,0,0,0.82) 19%, rgba(64,58,58,0.82) 69%, rgba(218,165,32,0.82) 100%);
+}
+
+.bg-gradient-1{
+    background: linear-gradient(106deg, rgba(0,0,0,1) 19%, rgba(64,58,58,1) 47%, rgba(218,165,32,1) 100%);
+}
+
+.bg-gradient-2{
+    background: linear-gradient(106deg, rgba(0,0,0,1) 19%, rgba(64,58,58,1) 69%, rgba(218,165,32,1) 100%);
+    border: none;
+}
+
+.bg-team{
+	background: linear-gradient(61deg, rgba(0,0,0,1) 0%, rgba(64,58,58,1) 49%, rgba(0,0,0,1) 100%);
+}
+
+.box-business{
+	padding: 1rem;
+	background-color:#101010;
+	min-height: 45%;
+	max-height: 45%;
+}
+
+.btn-business{
+	color: #212529;
+	background-color:goldenrod;
+	border-color: goldenrod;
+	font-size: 1.25rem;
+	font-weight: 600;
+	transition: transform 0.4s,color 0.4s;
+}
+  
+.btn-business:hover{
+	color: black;
+	transition-delay: 0.15s;
+	transition-timing-function: ease-in-out;
+	transform: translateY(-15%);
+}
+
+.box-media{
+	background-color:#101010;
+}
+
+.card:hover{
+    box-shadow: 0 0.5rem 0.75rem 0 rgb(0, 0, 0);
+}
+
+.card-features{
+    list-style-type:none;
+} 
+
+.card-features li{
+    border-bottom: 0.125rem solid #eee;
+    padding: 0.66rem;
+    text-align: center;
+}
+
+.carousel-indicators li{
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 100%; 
+}
+
+.carousel-extra{
+	top: 50%;
+	transform: translateY(-50%);
+	bottom: initial;
+}
+
+.carousel-inner img{
+	width: 100%;
+	height: 100%;
+}
+
+.close:hover{
+    color:silver;
+}
+
+.contacts-icons {
+	color: goldenrod;
+	font-size: 18vh;
+	font-weight: 300;
+}
+
+.contact-mailbox{
+	font-size: 0.8rem;
+	font-weight: 300;
+	color:silver;
+}
+
+.cutout-container{
+	background-image: url("./assets/bg_wood_floor.jpg"); /* The image used - important! */
+	background-size: cover;
+	position: relative; /* Needed to position the cutout text in the middle of the image */
+	height: 18vh; /* Some height */
+}
+
+.cutout-text{
+	background-color: goldenrod;
+	color: black;
+	font-size: 4vw; /* Responsive font size */
+	font-weight: bold;
+	margin: 0 auto; /* Center the text container */
+	text-align: center; /* Center text */
+	position: absolute; /* Position text */
+	top: 50%; /* Position text in the middle */
+	left: 50%; /* Position text in the middle */
+	transform: translate(-50%, -50%); /* Position text in the middle */
+	mix-blend-mode: screen; /* This makes the cutout text possible */
+  }
+
+.dark-mode{
+	background-color: black;
+	color:silver;
+}
+
+.end-carousel-img{
+	height: 45vh;
+	width: 100%; 
+	overflow: hidden;
+	background-image: url("./assets/bg_testemunhos.jpg");
+	background-size: cover;
+	position: relative;
+	opacity: 0.8;
+}
+
+.form-group input{
+    width: 100%;
+}  
+
+.h1, .h2, .h3, .h4, .h5, .h6{
+	font-weight: 300;
+	line-height: 1.6;
+	color: goldenrod;
+}
+
+.img-bg{
+	background-image: url("./assets/bg_wood_dark_floor.jpg");
+	/*height: 100%;*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.img-bw{
+	border-radius: 5%;
+	filter: grayscale(100%);
+	transition: filter 0.4s;	
+}
+
+.img-bw:hover{
+	filter: grayscale(0%);
+}
+/*
+.jumbotron-extra{
+	padding: 0.5rem 0.5rem;
+	margin-bottom: 0.5rem;
+	padding-right: 0;
+	padding-left: 0;
+	border-radius: 0;
+}
+
+.jumbotron-extra h1{
+	padding: 0.5rem 0.5rem;
+	margin-bottom: 0.5rem;
+	padding-right: 0;
+	padding-left: 0;
+	border-radius: 0;
+}
+*/
+.logo-medium-we{
+	color: silver;
+	font-size: 3vw;
+	font-weight: 100;
+}
+
+.logo-medium-buzz{
+	color: goldenrod;
+	font-size: 6vw;
+	font-weight: 100;
+	font-style: italic;
+}
+
+.logo-small-we{
+	font-size: 0.66rem;
+	color: silver;
+	font-weight: 300;
+}
+
+.logo-small-buzz{
+	font-size: 1rem;
+	color: goldenrod;
+	font-weight: 300;
+	font-style: italic;
+}
+
+.m-6 {
+	margin: 6rem !important;
+}
+	
+.mt-6,
+.my-6 {
+	margin-top: 6rem !important;
+}
+	
+.mr-6,
+.mx-6 {
+	margin-right: 6rem !important;
+}
+	
+.mb-6,
+.my-6 {
+	margin-bottom: 6rem !important;
+}
+
+.ml-6,
+.mx-6 {
+	margin-left: 6rem !important;
+}
+
+.nav-item a>i{
+	font-size: 1rem;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+.nav-mystyle{
+	opacity: 0.66; /* Opacidade do Nav */
+	transition: opacity 0.4s;
+}
+
+.nav-mystyle:hover{
+	opacity: 0.95;
+}
+
+.parallax-work{
+    /* The image used */
+    background-image: url("./assets/bg_webdesign.jpg");
+    /* Full height */
+    height: 50vh; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-bw{
+    /* The image used */
+    background-image: url("./assets/bg_staff.jpg");
+    /* Full height */
+    height: 50vh; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-container{
+	position: relative;
+  	width: 100%;
+}
+  
+.profile-middle{
+	transition: 0.5s ease;
+  	opacity: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  	text-align: center;
+}
+  
+.profile-container:hover .profile-img{
+	opacity: 0.3;
+}
+  
+.profile-container:hover .profile-middle{
+	opacity: 1;
+}
+
+.profile-card{
+	background-color:black;
+	max-width: 66vw;
+}
+
+.profile-img{
+	opacity: 1;
+  	display: block;
+  	width: 100%;
+  	height: auto;
+  	transition: .5s ease;
+  	backface-visibility: hidden;
+}
+
+.step{
+    height: 1rem;
+    width: 1rem;
+    margin: 0 0.125rem;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+  
+.step.active{
+    opacity: 1;
+}
+  
+  /* Mark the steps that are finished and valid: */
+.step.finish{
+    background-color: goldenrod;
+}
+
+.tab{
+    display: none;
+}
+
+.text-decoration-none span{
+	color:silver;
+}
+
+.title-gold{
+	font-size: 6vw;
+	font-weight: 600;
+	color:black;
+}
+
+.title-basic{
+	background-color: rgb(64, 85, 23);
+    color: silver;
+    padding: 1rem;
+}
+
+.title-business{
+  	background-color: midnightblue;
+    color: silver;
+    padding: 1rem;
+}
+
+.title-premium{
+    background-color: goldenrod;
+    color: silver;
+    padding: 1rem;
+}
+
+.title-promo{
+    background-color: rgb(56, 2, 2);
+    color: silver;
+    padding: 1rem;
+}
+
+.title-webapp{
+    background-color: rgb(0, 9, 92);
+    color: silver;
+    padding: 1rem;
+}
+
+.title-personalize{
+  	background-color: #101010;
+    color: silver;
+    padding: 1rem;
+}
+
+.title-standart{
+	background-color: rgb(20, 32, 20);
+    color: silver;
+    padding: 1rem;
+}
+
+.white-mode{
+	background-color:whitesmoke;
+	color: black;
+}
+
+.bg-intro{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+    background: radial-gradient(circle, rgba(16,16,16,1) 0%, rgba(0,0,0,1) 50%, rgba(16,16,16,1) 100%);
+	z-index: 1029; /*Prioridade nível 1*/
+    text-align: center;
+    vertical-align: center;
+    animation-name: bg-intro-anim;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    opacity:0;
+    display: none;
+}
+
+@keyframes bg-intro-anim{
+    from {opacity:1}
+    to {opacity:0}   
+}
+
+.letras-douradas{
+	animation-name: letras-douradas-anim;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+}
+
+@keyframes letras-douradas-anim{
+	0%   {color:white}
+	25%   {color:silver}
+	50% {color:goldenrod}
+	75% {color:silver}
+	100% {color:white}
+}
+
+.loading-bar{
+    height: 1rem;
+    background: goldenrod;
+    width:0%;
+    opacity:0.75;
+    animation-name: loading-bar-anim;
+    animation-duration: 3s;
+	animation-timing-function: ease-out;
+}
+
+@keyframes loading-bar-anim{
+	0% {width:0%}
+    50% {width:100%}
+    80% {width:100%;opacity:0.5}
+    100% {width:100%;opacity:0}
+}
+
+@media (pointer: coarse) and (hover: none){
+	#introVideo{
+		background: src="./assets/bg_webdesign.jpg" black no-repeat cover center scroll;}
+} /* Mudar a imagem por defeito! */
+
+
+
+
+
+
+
+
+
+
